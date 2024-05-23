@@ -11,9 +11,14 @@
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
         }
+        .content{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
         #letter-content{
             color: #624f25;
-            min-height: 500px;
             font-size: 15px;
             overflow: hidden;
             margin: 0px auto;
@@ -26,16 +31,20 @@
     </style>
 </head>
 <body>
-    <div id="letter-content"></div>
+    <div class="content">            
+        <div id="letter-content"></div>
+    </div>
 </body>
-<script src="./library/juery.min.js"></script>
+<script src="./library/jquery.min.js"></script>
 <script src="./library/typeit.min.js"></script>
 <script type="text/javascript">
-	$(document).ready(function() {
+    $(document).ready(function() {
+        let longTime = parseInt((new Date().getTime() - new Date('2023-02-24 20:00:00').getTime())/1000)
+        let longDay = parseInt(longTime/24/60/60);
         $('#letter-content').typeIt({
-            strings: ["亲爱的敏敏：", "my favorite"],
+            strings: ["亲爱的敏敏：", "my favorite 我们相识已经" +longDay+ "天了"],
             speed: 100
         });
-	})
+    })
 </script>
 </html>
