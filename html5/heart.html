@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" /> 
+	<title>送给小宝贝的情书</title>
+	<style type="text/css">
+		body{margin:0;padding:0;background:#ffe;font-size:12px;overflow:auto}
+		#mainDiv{width:100%;height:100%}
+		#loveHeart{float:left;width:670px;height:625px}
+		#garden{width:100%;height:100%}
+		#elapseClock{text-align:right;font-size:18px;margin-top:10px;margin-bottom:10px}
+		#words{font-family:"sans-serif";width:500px;font-size:24px;color:#666}
+		#messages{display:none}
+		#elapseClock .digit{font-family:"digit";font-size:36px}
+		#loveu{padding:5px;font-size:22px;margin-top:80px;margin-right:120px;text-align:right;display:none}
+		#loveu .signature{margin-top:10px;font-size:20px;font-style:italic}
+		#clickSound{display:none}
+		#code{float:left;width:440px;height:400px;color:#333;font-family:"Consolas","Monaco","Bitstream Vera Sans Mono","Courier New","sans-serif";font-size:12px}
+		#code .string{color:#2a36ff}
+		#code .keyword{color:#7f0055;font-weight:bold}
+		#code .placeholder{margin-left:15px}#code .space{margin-left:7px}
+		#code .comments{color:#3f7f5f}
+		#copyright{margin-top:10px;text-align:center;width:100%;color:#666}
+		#errorMsg{width:100%;text-align:center;font-size:24px;position:absolute;top:100px;left:0}
+		#copyright a{color:#666}
+	</style>
+</head>
+<body>
+	<div id="mainDiv">
+		<div id="content" style="width: 1110px; height: 625px; margin-top: 36px; margin-left: 10px;">
+			<div id="code" style="margin-top: 112.5px;">
+				<span class="comments">/**</span><br>
+				<span class="space"><span class="comments">*2023-01-25 20:34,</span><br>
+				<span class="space"><span class="comments">*至今</span><br>
+				<span class="space"><span class="comments">*/</span><br>
+				Boy name = <span class="keyword">Mr</span> Li<br>
+				Girl name = <span class="keyword">Mrs</span> Dong<br>
+				<span class="comments">// Fall in love river. </span><br>
+				The boy love the girl;<br>
+				<span class="comments">// They love each other.</span><br>
+				The girl loved the boy;<br>
+				<span class="comments">// AS time goes on.</span><br>
+				The boy can not be separated the girl;<br>
+				<span class="comments">// At the same time.</span><br>
+				The girl can not be separated the boy;<br>
+				<span class="comments">// Both wind and snow </span></span></span></span></div>
+			<div id="loveHeart">
+				<canvas id="garden" width="670" height="625"></canvas>
+				<div id="words" style="position: absolute; top: 231px; left: 520px;">
+					<div id="messages" style="display: block;">
+						お嬢さん，这是我们相爱在一起的时光。
+						<div id="elapseClock"><span class="digit">0</span> days <span class="digit">0</span> hours <span class="digit">0</span> minutes <span class="digit">0</span> seconds</div>
+					</div>
+					<div id="loveu" style="display: block;">
+						爱你直到永永远远。<br>
+						<div class="signature">- 爱你的土狗呢</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="copyright">
+			<a href="https://love.haiyong.site/#">....</a><br>
+			<a href="https://love.haiyong.site/#">....</a><br>
+			
+		</div>
+	</div>
+	<audio preload="" autoplay="" loop="" id="music" onload="toggleSound">
+	     <source src="https://www.hifini.com/get_music.php?key=CUvfwJCR5YCbqwwwHiFiNicom0RasIN6xLkpisOvTs4ZdxxHiFiNixxdOApMDokn9YdYCkKhkgSPn3T3sziXqv1OS3kbIQ&p=OFLA6TYQAEYDELTXH4RFMN3QN5JHIFJBDN5V4IQ3HEPBIJYEORPHOXAUDAND4AQUB4PC2UBWLUBX4U2CAAAD6IJPF4TSOCQMAI7QE5KBAEBBQFJQBNYQ4AATEYCCW6LFLJ6QGPCPHQRREPQ2DI2D2GK4IZFGEMQ7BZ4VY5R7EI6BIFYMLFIVY5YVFYXC4AJOKEMVWEIWFYAFAHiFiNiYINYUECICHANGHiFiNiYINYUECICHANGHiFiNiYINYUECICHANG" type="audio/mpeg">
+	</audio>
+</body>
+<script src="./library/jquery.min.js"></script>
+<script type="text/javascript" src="./library//garden.js"></script>
+<script type="text/javascript" src="./library//heart.js"></script>
+<script type="text/javascript" charset="utf-8">
+window.onload = function() {
+	toggleSound();
+}
+function toggleSound() {
+    var music = document.getElementById("music"); //获取ID  
+    if (music.paused) { //判读是否播放  
+        music.paused = false;
+        music.play(); //没有就播放 
+    }
+}
+$(document).ready(function() {
+    window.offsetX = $("#loveHeart").width() / 2;
+    window.offsetY = $("#loveHeart").height() / 2 - 55;
+    var together = new Date('2023-01-25 20:34:00');
+    setTimeout(function() {
+        startHeartAnimation();
+    }, 1000);
+
+    timeElapse(together);
+    setInterval(function() {
+        timeElapse(together);
+    }, 1000);
+
+    adjustCodePosition();
+    $("#code").typewriter();
+
+})
+</script>
+</html>
