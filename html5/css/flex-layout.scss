@@ -1,0 +1,72 @@
+// flex 弹性布局
+.flex-box {
+  display: flex;
+  align-items: flex-start;
+}
+.flex-box-col {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.flex-center{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.flex-2 {
+  flex: 2;
+  overflow: hidden;
+}
+.flex-1 {
+  flex: 1;
+  overflow: hidden;
+}
+.flex-0 {
+  flex: 0;
+  overflow: hidden;
+}
+.h-100 {
+  height: 100%;
+}
+.w-100{
+  width: 100%;
+}
+.ml-30 {
+  margin-left: 30px;
+}
+.mr_30 {
+  margin-right: 30px;
+}
+.mt_30 {
+  margin-top: 30px;
+}    
+.mb_30{
+  margin-bottom: 30px;
+}
+
+.font-number {
+  font-family: "Bebas-Neue";
+}
+// 从上向下渐蓝色
+.color-sapphirine{
+  background: linear-gradient(0deg, #AAEEF9 0%, #86A3FF 0%, #62BEF8 0%, #FFFFFF 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.scroll-bar-none{
+  //定义滚动条
+  &::-webkit-scrollbar{
+    width: 10px;
+    height: 5px;
+  }
+  //定义滑块 内阴影+圆角
+  &::-webkit-scrollbar-thumb{
+    border-radius: 1em;
+    background-color: rgba(64,175,255,0);
+  }
+  //定义滚动条轨道 内阴影+圆角
+  &::-webkit-scrollbar-track{
+    border-radius: 1em;
+    background-color: rgba(64,175,255,0);
+  }
+}

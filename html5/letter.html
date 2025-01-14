@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1" /> 
+    <title>My Favorite</title>
+    <link rel="stylesheet" href="">
+    <style type="text/css">
+        body{
+            background: #233;
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+        .content{
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        #letter-content{
+            color: #624f25;
+            font-size: 15px;
+            overflow: hidden;
+            margin: 0px auto;
+            padding: 20px;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            box-shadow: 0px 0px 3px #9d9d9d, inset 0px 0px 27px #fff;
+            background: #f7f2ec url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAMAAABHPGVmAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAA5UExURfTv5vPt5ffy6ffx6fLt5PXv5/Hs4/Pu5fXw5/bx6Pjz6vHr4/Dr4u/q4fnz6/n06/r17O/p4e7p4IOgcJEAAArOSURBVGjevZqNmhupDkQFCBB0257c93/YewqTbDabH8exk3yZ2OPuBqSqUglso/UzUh1uM0Yfc/Toxr/mZ+u5tbDa++XIxQ7rqY9ajhrhnqeZ97BmLVLz3Guf9RjWqzev1ko5ax9tZC/NIsxHayXOqAwS7bQ8xuHlnGVGjHreRk0lInqKHpG9FXezMYx7T6spzA4ezdvMD7M+3Efv3nnniQmFpc5kezerlWvPbsxqeHRWFEU/Uzq6rfVZdRY74wibKfWU69HO1Kx4GcfUWE4QzEr3OrjS4sxpeOUT3jJ4i1KH5aR1W+Iv0x+eBk+v3Kal3DwxES5eq+jlsBgtD6unJyd0lluMESVatdpyzYOnsZo+jUknRicJI9fZucnK0Xu61ku3xNtUslULnn6EKxbpqG0MpsJcsl+dsfPsBH66XXM0fs9owQoHUfQ2C3Mm6Y0FHaUyLmMM76mNmMTotFT7LVmONMw1lBNBxYNL0ziil2AiOcXHhatjjki3g2cNL6SgavIMT26MgIANH5+IN4Ekvcw0ea/JD/Ji63rnvQMjEECEo4zUuO4k2FzpHjV8pM67QU5H9MykBADCWVZ89RRwCFitn5lMeakMO7IGyJoPke3t0kufiVs6t5IFV1J44DhYuUbs4Rc+SUCEcBENLaQzAk8StnqbRLJrEcRCuPbML7ug0QF9Yjhmy8yIB6lrvSUvJLQS2+PkQcylfVJQ+nT3ecYoECsX8sPS+4UI/eZte2osBfrOFW7WBBqK8Uk5PJck1M9g4b6YCDLfx0SiYhPVOIiw+GGWiFJhfa5HhU/rTmhLPYlZO2vKYDNmPbmRJUaZCAskOxMZF2ccQqYqwWGhOfrUslEm+MYQlZV8sPIkVg+J07VXIMo87dI/SJbw08yPSnJ64TJbTK6RwC6TRzhyAxSEB1wzj8TzWXcfV2tplCuf1hIVXKGKcAVan9CC5cFIZSWnGdJRYNWiwsJb5kNLEtMknSTwvbD6mWsT+XlF4GL4FFFKqtdQTpX60B2MQAxC78rIBypBIJzkwM9sTIKAoxnOjBMADRZsziNT4gkzMyHQSPBLlORD4mNbJubWMBLBEOK3TQcJyA00zYQXbkouUDXiC3fjcSmiHpAeoSHVw6W7Nu7yPCLHhfyhKAUMKsUF3YDSkUlgjVxOzcKJILNDy7jRiA6ji8YdNeL3oyXFRZdFhi+gVRQVoJUQYFeGwFspS+UQfAQgypopoNwjCM2EJA5bWXGkdhFNYZkNgcgZNeazOxdCM5Vgd/GBxR2QqWo2knpA4/3qrQkWAV5hiLjY18SzUOZo8I8qHxM+GqoKTE6fpPaikRVlSkzi16uEsuTQaKW2gtYCHxRw9FapXVwDqShboJpcBaLVEXdFVJGStpmXUutDaN+MgpQKbiqql1Wig/5NVtNIgGo8iyPKDHd2MDuWDbjrJ+rSKSzMmPURG6aNzqMPJ6Uu/lCjjQqm8v7KGrXroKh7VX6JGQG8QU3xDOB2CfBai8r7FSwDO/kIiD+RNqkA7KT4Lz4zcVU9UgOBkDlqsqNz+SLhgWdX5m8SABDl6/aR5TBaJmlkud1xmuaofo5T4bmPRX4n0gJry01yjoxCnxG32pcTu8JLUyEna0z1hI5bbfU48CRR4HFQ+wRnMNvl5Nok6fwhf0i+pVPppHSFxPMIZsBNBAMVHzXbfxTdVKvJpLzQoeCxaLJMACVgPbJkWM8JFUxVMl7zVB5yDjs1zhCw0AH+Q14g7wq7Kgv3I2Li1p0yDDVu5PdjvIGWtllIFSSTTRrTpfoIkmvqYByrBpta8wvSjihmBhItNGMm8tEmIi/oyZpIcpSR5YSwNzZVEf+KuRO0Ds3uXdDKepuV3y7L3/PCAVbfTwwsVKdOFZLoi+0Hy/yf7KCdZVxQ7EItV6lWXgLDLeUusjQ8mPfEmX+YcGZ87yqIBOyUoe8VRnPhBRmVgX9B5yJTpeQuZm72ox0U30NgYIQh1ehZVcfKirzcgxHDoietiR58SPIdR0qnU8ZYxlDKNTFchPlQXevvaLB2E5cwVsgjxeFkwGWJlaAmLKFGKBf2El8bZ5Wrle/X5xLDfmm1pJkkSrl+EktOXmBy1v2nyYmRBK4U6eAYdIANchVC+2Uk1V0S4RI+6hVZHhSsJguT2iIzntY+6LFwByTu2iWWNmeXIWvKuUiFwCDV+c4eaIhnRKJPhW0EDqFq5gSb95SuUy1Ez1SvutRc0ws/QCGQE76kcCqnJMmkJIwJG+RokHzbRfV5Oj9QuG2Xva8H3otzqmY+VGhySrARgqdjVaO4khtfpoyblaZ8+1lptc0mleJd7p0EclW+kYp8zVngFP/TeJaxtvH3Rioylb2qH6TsNZH7THN7Z5Enlt7Vuz2l4btOIMmydaTpJlCBz/OUXw4VW1XJ3TX9cR3/WWdm21z+EQ9+ZWC5g0JV1FTjYl3yopfaDuElMkwgVHYYFixjJssx6RoEBykGP4Y2bWpWR0pU2zw9rs2TKp1AP30Zg7Xt84Qv3N7zga0l270MArjqx5T1qMjNmbSMpvakalNIGL8xIq7kt/sl27QQwoQcKVV+tVoKE4vtP2/3v2wpACtwQmjBXpYB9H6Ts8O01eNejihATps1RA4QoB6o0Gb1viaTT5bEyk22TyxVMw2aFSttHbEeehhGLbI0LM1WWVt9t9ryJtdvpJMmpi57QqkMR37PsRbzwmK7C3pBrbQFIOkkgEwq75YOVQIrqcN0dBYRoSv1BXYKDX040ycKTuGsdbUdot8UxKMuHGYfckZko62NHagqR3Zvm15aP75tzWRdCGz+3m7F3hEZ/Zru9kEJ96aekxQD4XHv0LGxizfYDHJPcU1ZVtvViMbC1BZMxKAlJi8xXGb/laL8d7zw1s439lmMsbXzTT7lrs92T03/8WbVC9Jve566ks4xX4Zasiw9cklweUULZptvL9lC+bJN8w2nbW8Wv2Gz458N6aUt6NeLm4V/65ftRz+s2k+1ZHsD7qvWfm8fyN2Fqu8q0kYeunYK+jObfFCufayXD3Vmu/ujLQEeTNQ3g+Ap0rH2mgHjObVr6qtJVc3bm5XvK/CYCNvi8O9DqH3QFZeQd0/a5VIFXHrxhADZ3jKrslBNjXmTbIZME+Y1CT9YC1QASkATol5U+sdvHR3tLfhfFNBdpPlzRLl4/wTo9OAEY369zW/rgEOHRr9/9vLwIYrtJjeWPS0Yr1NCqRM9iTdj3JWQuFDVQQcIzkPnQ0kE7rLrpECWjBpGsmSvv22kEWsdgtlrtrL3dvmqnXySb3R8AnlCs7SZ+lJ3cndA8oe0/jqWvZfpB/YV9t7FE1bAtuC+p1n80pDehfkZO/Ww+H82sFS9Q7szKi1CnI4jdBZqrzDJn48qv3Omts/tBK/4QCWo4vBoHTSBAOpKzicNUPV8a+DiZ8ehux36k634X7ZcX7j2rd3fLUXqOrAU9nQkWdaB9+I4nZnQDbjHKn3xEz7/He36bJEePTN8xob9Hd+1peO1RusbebI99D+d/d490IHVq5Zn67RRGHy2gD9wovmZv4+q9ufKAGQf1wjbrHrXFz0Wc21/qeP5Td+9sTwqkIHscrvffnHEti98ybHSj7yn7Q7yBaXpx13qX9lasf1tmV8H9g++kWPbOL3tizEyZ7a3AJ/90sD+YgJgZo0p+fe3Gbehfv03x74y7f8HDjfVpxMz5A8AAAAASUVORK5CYII=);
+        }
+    </style>
+</head>
+<body>
+    <div class="content">            
+        <div id="letter-content"></div>
+    </div>
+</body>
+<script src="./library/jquery.min.js"></script>
+<script src="./library/typeit.min.js"></script>
+<script src="./library/utils.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        let loveDate = calculateLoveTime();
+        $('#letter-content').typeIt({
+            strings: ["亲爱的敏敏：", "my favorite 我们相识已经" +loveDate.days+ "天了"],
+            speed: 100
+        });
+    })
+</script>
+</html>
